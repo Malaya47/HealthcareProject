@@ -2,6 +2,85 @@
   font-family: sans-serif;
   text-align: center;
 }
+
 /* .custom-navbar {
   background-color: #003a70;
 } */
+
+.date-item {
+  min-width: 100px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
+
+.custom-control-prev,
+.custom-control-next {
+  position: absolute;
+  top: -50px;
+  /* Adjust this value to position the buttons upwards */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-control-prev {
+  left: 10px;
+  /* Adjust to position the left button horizontally */
+}
+
+.custom-control-next {
+  right: 10px;
+  /* Adjust to position the right button horizontally */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 100px;
+  height: 30px;
+}
+
+
+#specialitySection {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+html {
+  overscroll-behavior: smooth;
+}
+
+
+#specialitySection::-webkit-scrollbar {
+  width: 10px;
+}
+
+#specialitySection::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#specialitySection::-webkit-scrollbar-thumb {
+  background: #35B6B4;
+
+}
+
+#specialitySection::-webkit-scrollbar-button {
+  display: none;
+  /* Remove the upper and lower arrows */
+}
+
+
+/* For a specific element in Firefox */
+#specialitySection {
+  scrollbar-width: thin;
+  scrollbar-color: #35B6B4 #f1f1f1;
+}

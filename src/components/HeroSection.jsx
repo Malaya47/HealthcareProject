@@ -8,11 +8,7 @@ const HeroSection = () => {
     <section>
       {/* IMAGE */}
       <div>
-        <img
-          src={doctors}
-          className="img-fluid rounded py-3 m-3"
-          alt="Doctors"
-        />
+        <img src={doctors} className="img-fluid rounded  py-3" alt="Doctors" />
       </div>
       {/* Carousel */}
       <div id="carouselExampleIndicators" className="carousel slide">

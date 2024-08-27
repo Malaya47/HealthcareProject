@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Doctors from "./components/Doctors";
+import DoctorProfile from "./components/DoctorProfile";
 
 // Adding routes
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/doctors",
     element: <Doctors />,
+  },
+  {
+    path: "/doctor/:doctorName",
+    element: <DoctorProfile />,
   },
 ]);
 
@@ -27,5 +32,5 @@ root.render(
     <RouterProvider router={router}>
       <App />
     </RouterProvider>
-  </StrictMode>
+  </StrictMode>,
 );
